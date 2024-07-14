@@ -1,0 +1,44 @@
+.card-body .bast-data,
+.card-body .project-data{
+    width: 30%;
+    padding: 5px 15px;
+    border-right: 1px dashed;
+    margin-right: 10px;
+    border-color: rgb(0, 0, 0);
+    position: relative; 
+}
+.card-body .detail-table,
+.card-body .bast-table{
+    width: 70%;
+}
+.tables {
+    margin-bottom: 0;
+    border-collapse: separate;
+    border-bottom: thin solid #dddddd;
+}
+
+.tables thead th {
+    
+    border-top: thin solid #dddddd;
+    border-bottom: thin solid #dddddd;   
+    background-color: #ffffff;
+    font-size: .75rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #566a7f;
+    font-weight: 520;
+}
+
+.tables td{
+    /* border-color: transparent; */
+    font-size: 15px;
+    background-color: #ffffff;
+    color: #212121;
+}
+
+.tables .dataTable_wrapper .dataTable_paginate .pagination li{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
