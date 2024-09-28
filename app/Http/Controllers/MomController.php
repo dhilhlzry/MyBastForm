@@ -268,7 +268,7 @@ class MomController extends Controller
         $selectedproject = $request->project;
         $selectedbast = $request->bast;
         $from = $request->from;
-        $data['set'] = DocumentSet::where('name','mom')->first();
+        $data['set'] = DocumentSet::where('name','document')->first();
         $data['cetak'] = Mom::findOrfail($request->id);
         $data['waktu'] = Mom::selectRaw('TIMESTAMPDIFF(MINUTE, time_awal, time_akhir) AS selisih')->where('id', $request->id)->first();
         if ($from == 'bast') {

@@ -273,7 +273,7 @@ class BastController extends Controller
     {
         $data['cetak'] = Bast::findOrfail($id);
         $query = Bast::findOrfail($id);
-        $data['set'] = DocumentSet::where('name', 'bast')->first();
+        $data['set'] = DocumentSet::where('name', 'document')->first();
         $data['head'] = DB::table('project')->where('id', $query->projectid)->first();
         $data['detail'] = DB::table('bast_detail')->where('bastid', $query->id)->get();
         return view('admin.bast.bast_print', $data);

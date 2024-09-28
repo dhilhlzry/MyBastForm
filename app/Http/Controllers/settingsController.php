@@ -15,13 +15,13 @@ class settingsController extends Controller
 
     public function store(Request $request)
     {
-        if ($mom = DocumentSet::where('name', 'mom')->first() == null) {
-        } else {
-            $mom = DocumentSet::where('name', 'mom')->first();
-            $mom->delete();
-        }
+        // if ($mom = DocumentSet::where('name', 'mom')->first() == null) {
+        // } else {
+        //     $mom = DocumentSet::where('name', 'mom')->first();
+        //     $mom->delete();
+        // }
         DocumentSet::create([
-            'name' => 'mom',
+            'name' => 'document',
             'margin_y' => $request->margin_y,
             'margin_x' => $request->margin_x,
             'col1_mt' => $request->column1,
